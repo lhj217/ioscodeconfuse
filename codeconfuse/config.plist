@@ -23,5 +23,9 @@
 		<string>Pods</string>
 		<string>garbagecode</string>
 	</array>
+	<key>garbageFilePercent</key>
+	<integer>100</integer>
+	<key>garbageCodePercent</key>
+	<integer>100</integer>
 </dict>
 </plist>
