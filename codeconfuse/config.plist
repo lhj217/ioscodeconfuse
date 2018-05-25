@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>isConfuseCpp</key>
+	<true/>
+	<key>isConfuseObjc</key>
+	<true/>
+	<key>isInsertGarbageForCppFile</key>
+	<true/>
+	<key>isInsertGarbageForObjcFile</key>
+	<true/>
+	<key>sourcePath</key>
+	<array>
+		<string>/Volumes/data/tool/game/popstar_ios/Classes</string>
+		<string>/Volumes/data/tool/game/popstar_ios/proj.ios_mac</string>
+	</array>
+	<key>outputDir</key>
+	<string>/Volumes/data/tool/game/popstar_ios/Classes</string>
+	<key>excludeName</key>
+	<array>
+		<string>Carthage</string>
+		<string>Pods</string>
+		<string>garbagecode</string>
+	</array>
+</dict>
+</plist>
