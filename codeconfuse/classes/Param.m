@@ -25,9 +25,6 @@ static Param* _instance = nil;
     return [[self dir] stringByAppendingPathComponent:@"DICT.txt"];
 }
 
-- (NSString *)garbageFile {
-    return [[self dir] stringByAppendingPathComponent:@"garbagepiece.json"];
-}
 
 - (NSString *)keywordFile {
     return [[self dir] stringByAppendingPathComponent:@"reskeys.txt"];

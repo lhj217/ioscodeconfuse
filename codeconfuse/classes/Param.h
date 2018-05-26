@@ -27,7 +27,5 @@
 
 - (NSString *)dictionaryFile;
 
-- (NSString *)garbageFile;
-
 - (NSString *)keywordFile;
 @end

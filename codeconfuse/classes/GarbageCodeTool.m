@@ -15,7 +15,6 @@
 #import "CodeGenerator.h"
 
 @implementation GarbageCodeTool {
-    NSDictionary *mCodeDic;
     NSMutableArray *mExcludeArr;
     BOOL isCppInjectGarbageCode;
     BOOL isObjcInjectGarbageCode;
@@ -36,13 +35,6 @@ static GarbageCodeTool* _instance = nil;
 {
     self = [super init];
     if (self) {
-        NSData *jsonData = [[NSFileManager defaultManager] contentsAtPath:[[Param shareInstance] garbageFile]];
-        NSError *err;
-        mCodeDic = [[NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err] copy];
-        if (err) {
-            NSLog(@"%@",err);
-        }
-
         mExcludeArr = [[NSMutableArray arrayWithObjects:@"switch",@"@implementation",@"@interface",@"typedef",@"//",@"extern",@"struct",@"union",@"static", nil] copy];
         isCppInjectGarbageCode = [[Param shareInstance] isInsertGarbageForCppFile] ;
         isObjcInjectGarbageCode =[[Param shareInstance] isInsertGarbageForObjectFile] ;

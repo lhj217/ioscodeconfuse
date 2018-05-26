@@ -434,8 +434,6 @@
 {
     int type = [self judge:findStr];
     NSUInteger fI=0;//firstIndex,
-    NSUInteger nI=0;//nextIndex
-    NSString *temp = @"";
     switch(type)
     {
         case INCLUDE:
@@ -520,7 +518,7 @@
                         else
                         {
                             NSString *cur_function_str =[b stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-                            if ([cur_function_str length] > 2  && [b rangeOfString:@"("].location!=NSNotFound);
+                            if ([cur_function_str length] > 2  && [b rangeOfString:@"("].location!=NSNotFound)
                             {
                                 [theclass.functions addObject:cur_function_str];
                             }

@@ -29,6 +29,10 @@
     return self;
 }
 
+- (int)parseFile:(SrcFileModel *)srcFile {
+    return 0;
+}
+
 - (int)judge:(NSString *)s{
     return -1;
 }
